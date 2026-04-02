@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات اللابتوب</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e50000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="لابتوب">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #222;
+      margin-top: 0;
+    }
+
+    .note {
+      background: #fff8e1;
+      border-right: 4px solid #f59e0b;
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .contact-bar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-bar a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      background: #25d366;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .contact-bar a.phone {
+      background: #e50000;
+    }
+
+    .movies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      width: 220px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .movies {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .card {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 6px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin: 8px 0 4px;
+      color: #222;
+    }
+
+    .card p {
+      margin: 3px 0;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      background: #e50000;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .btn.purple { background: #6d28d9; }
+    .btn.green  { background: #25d366; }
+  </style>
+</head>
+<body>
+
+  <h1>� نقدم خدمات للابتوب الاتية:</h1>
+
+  <div class="contact-bar">
+    <a href="tel:+962799318512" class="phone">0799318512 اتصال</a>
+    <a href="https://wa.me/962799318512" target="_blank">💬 واتساب</a>
+  </div>
+
+  <!-- Note -->
+  <div class="note">
+    🚗 <strong>ملاحظة:</strong> مع إمكانية توصيل اللابتوب داخل الجامعة برسوم توصيل <strong>0.5 د فقط</strong>،
+    أو يتم إيداع الجهاز على بوابة الجنوبي.
+    <br><br>
+    <button id="install-btn" style="display:none; background:#1d4ed8; color:#fff; border:none; border-radius:6px; padding:8px 14px; font-size:13px; font-family:Arial,sans-serif; cursor:pointer;">
+      📲 انقر لتحميل الصفحة كتطبيق هاتف
+    </button>
+  </div>
+
+  <div class="movies">
+
+    <!-- Card 1 -->
+    <a class="card" href="https://wa.me/962799318512?text=أريد خدمة الفورمات وتثبيت ويندوز" target="_blank">
+      <div class="icon"></div>
+      <h3>فورمات / تنزيل وتثبيت ويندوز</h3>
+      <p>تنزيل وتثبيت ويندوز 10 أو 11 مع البرامج الأساسية.</p>
+      <span class="btn green">واتساب</span>
+    </a>
+
+    <!-- Card 2 -->
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت وتحديث التعريفات وحل الأعطال" target="_blank">
+      <div class="icon"></div>
+      <h3>تثبيت وتحديث التعريفات وحل الأعطال</h3>
+      <p>حل مشاكل التعريفات والأعطال الشائعة:<br>مشاكل الصوت / الشاشة السوداء / مشاكل الواي فاي وعدم الاتصال بالإنترنت وغيرها...</p>
+      <span class="btn green">واتساب</span>
+    </a>
+
+    <!-- Card 3 -->
+    <a class="card" href="https://wa.me/962799318512?text=أريد فحص الجهاز وضبط الإعدادات" target="_blank">
+      <div class="icon"></div>
+      <h3>فحص الجهاز وضبط الإعدادات</h3>
+      <p>فحص الجهاز وضبط الإعدادات الأساسية لضمان عمله بشكل سليم وحل مشكلة ارتفاع الحرارة.</p>
+      <span class="btn green">واتساب</span>
+    </a>
+
+    <!-- Card 4 -->
+    <a class="card" href="software.html">
+      <div class="icon"></div>
+      <h3>خدمات أخرى — تثبيت البرامج</h3>
+      <p>مايكروسوفت أوفيس / برامج المحاسبة / أوتوكاد / فوتوشوب / لومين / D5 Render / Revit / وغيرها...</p>
+      <span class="btn purple">عرض البرامج</span>
+    </a>
+
+  </div>
+
+  <script>
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+
+    // PWA install prompt
+    let deferredPrompt;
+    const btn = document.getElementById('install-btn');
+
+    window.addEventListener('beforeinstallprompt', e => {
+      e.preventDefault();
+      deferredPrompt = e;
+      btn.style.display = 'block';
+    });
+
+    btn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') btn.style.display = 'none';
+      deferredPrompt = null;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      btn.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>

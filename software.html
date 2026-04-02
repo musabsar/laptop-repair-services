@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة البرامج</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e50000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="لابتوب">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #222;
+      margin-top: 0;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-bottom: 16px;
+      text-decoration: none;
+      background: #555;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #222;
+      margin: 24px 0 10px;
+      border-right: 4px solid #e50000;
+      padding-right: 8px;
+    }
+
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .card .icon {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      margin: 6px 0 4px;
+      color: #222;
+      flex: 1;
+    }
+
+    .card p {
+      margin: 3px 0;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .card .btn {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: none;
+      background: #e50000;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .movies {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="index.html">&#8594; العودة للرئيسية</a>
+  <h1>قائمة البرامج المتاحة</h1>
+
+  <!-- Office -->
+  <div class="section-title">🗂️ أوفيس والإنتاجية</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Office 2010" target="_blank">
+      <div class="icon">📄</div>
+      <h3>Microsoft Office 2010</h3>
+      <p>Office</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Office 2019 (180 يوم)" target="_blank">
+      <div class="icon">📄</div>
+      <h3>Office 2019 — 180 يوم</h3>
+      <p>Office</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Office 365 للطلاب" target="_blank">
+      <div class="icon">☁️</div>
+      <h3>Office 365 — للطلاب فقط</h3>
+      <p>Office</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Office 2024" target="_blank">
+      <div class="icon">📄</div>
+      <h3>Office 2024 (أحدث إصدار)</h3>
+      <p>Office</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد إصلاح مشكلة PowerPoint Video" target="_blank">
+      <div class="icon">🎬</div>
+      <h3>PowerPoint — إصلاح مشكلة الفيديو</h3>
+      <p>Office</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت EndNote 21" target="_blank">
+      <div class="icon">📚</div>
+      <h3>EndNote 21.4</h3>
+      <p>بحث علمي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <!-- Design & Engineering -->
+  <div class="section-title">🏗️ التصميم والهندسة</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت AutoCAD" target="_blank">
+      <div class="icon">📐</div>
+      <h3>AutoCAD</h3>
+      <p>هندسة</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Revit 2022" target="_blank">
+      <div class="icon">🏢</div>
+      <h3>AutoCAD Revit 2022</h3>
+      <p>هندسة</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت SketchUp Pro 2022" target="_blank">
+      <div class="icon">🧊</div>
+      <h3>SketchUp Pro 2022</h3>
+      <p>تصميم ثلاثي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Lumion" target="_blank">
+      <div class="icon">🌆</div>
+      <h3>Lumion — 3D Render</h3>
+      <p>تصميم ثلاثي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت D5 Render" target="_blank">
+      <div class="icon">✨</div>
+      <h3>D5 Render</h3>
+      <p>تصميم ثلاثي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Photoshop 2021" target="_blank">
+      <div class="icon">🎨</div>
+      <h3>Photoshop 2021</h3>
+      <p>تصميم</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <!-- Statistics -->
+  <div class="section-title">📊 الإحصاء والعلوم</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت IBM SPSS Statistics 27" target="_blank">
+      <div class="icon">📊</div>
+      <h3>IBM SPSS Statistics 27 / 27.0.1</h3>
+      <p>إحصاء</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت MATLAB" target="_blank">
+      <div class="icon">🔢</div>
+      <h3>MATLAB</h3>
+      <p>علوم</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Mathematica" target="_blank">
+      <div class="icon">🧮</div>
+      <h3>Mathematica</h3>
+      <p>علوم</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <!-- Accounting -->
+  <div class="section-title">💰 المحاسبة</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت برنامج محاسبة" target="_blank">
+      <div class="icon">🧾</div>
+      <h3>برامج المحاسبة</h3>
+      <p>محاسبة</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <!-- Android Emulators -->
+  <div class="section-title">📱 محاكيات الأندرويد</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت GameLoop" target="_blank">
+      <div class="icon">🎮</div>
+      <h3>GameLoop</h3>
+      <p>محاكي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت BlueStacks" target="_blank">
+      <div class="icon">🎮</div>
+      <h3>BlueStacks</h3>
+      <p>محاكي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت LD Player 9" target="_blank">
+      <div class="icon">🎮</div>
+      <h3>LD Player 9</h3>
+      <p>محاكي</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Android OS" target="_blank">
+      <div class="icon">🤖</div>
+      <h3>Android OS</h3>
+      <p>نظام</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <!-- Windows -->
+  <div class="section-title">🪟 إصدارات ويندوز</div>
+  <div class="movies">
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Windows 11 عربي كامل" target="_blank">
+      <div class="icon">🪟</div>
+      <h3>Windows 11 — عربي كامل</h3>
+      <p>ويندوز</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Windows 10 عربي كامل" target="_blank">
+      <div class="icon">🪟</div>
+      <h3>Windows 10 — عربي كامل</h3>
+      <p>ويندوز</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Windows 10 LTSC" target="_blank">
+      <div class="icon">🪟</div>
+      <h3>Windows 10 LTSC</h3>
+      <p>ويندوز</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Windows 8.1 Lite عربي" target="_blank">
+      <div class="icon">🪟</div>
+      <h3>Windows 8.1 Lite — عربي</h3>
+      <p>ويندوز</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+    <a class="card" href="https://wa.me/962799318512?text=أريد تثبيت Windows 7 عربي" target="_blank">
+      <div class="icon">🪟</div>
+      <h3>Windows 7 — عربي</h3>
+      <p>ويندوز</p>
+      <span class="btn">واتساب</span>
+    </a>
+
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+
+</body>
+</html>
