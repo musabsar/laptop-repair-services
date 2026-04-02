@@ -1,6 +1,6 @@
 {
   "name": "خدمات اللابتوب",
-  "short_name": "لابتوب",
+  "short_name": "خدمات لابتوب",
   "start_url": "/laptop-repair/index.html",
   "scope": "/laptop-repair/",
   "display": "standalone",
